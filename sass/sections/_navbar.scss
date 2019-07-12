@@ -1,0 +1,105 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  z-index: 99;
+  
+  &__mobile,
+  &__landline {
+    text-align: right;
+    a {
+      text-decoration: none;
+    }
+  }
+  
+  &__phone {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 19px;
+    @include bold;
+    color: $text-color;
+  }
+
+  &__landline {
+    &-item {
+      display: block;
+      margin-bottom: 5px;
+      color: $text-color;
+      @include bold;
+      font-size: 19px;
+    }
+  }
+
+  &__small-text {
+    display: block;
+    font-size: 14px;
+    color: $text-color-light;
+  }
+
+  &-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 80px;
+  }
+
+  .logo {
+    &__text {
+      font-size: 18px;
+      text-transform: uppercase;
+      display: block;
+      @include bold;
+      margin-bottom: 5px;
+    }
+    &__descr {
+      font-size: 14px;
+      color: $text-color-light;
+    }
+  }
+}
+.menu {
+  position: fixed;
+  width: 100%;
+  top: 80px;
+  left: 0;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  background-color: $primary;
+  transition: 0.2s;
+  transform: translateY(-100%);
+  &_active {
+    transform: translateY(0%);
+  }
+  &__nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  &__link {
+    text-decoration: none;
+    font-size: 17px;
+    text-transform: uppercase;
+    color: #fff;
+  }
+  &-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    border: none;
+    border-right: 1px solid rgba(#510bba, 0.1);
+    border-left: 1px solid rgba(#510bba, 0.1);
+    height: 80px;
+    width: 70px;
+    &__line {
+      width: 20px;
+      height: 3px;
+      background-color: #89a9eb;
+      margin: 2px 0;
+    }
+  }
+}

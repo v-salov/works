@@ -1,4 +1,16 @@
-* {
-  box-sizing: border-box;
-  color: red
-}
+//Настройки сетки
+@import 'grid';
+
+//Настройка шрифтов
+@import 'fonts';
+
+//Настройка цветов
+@import 'colors';
+
+//Настройка интерфейса
+@import 'interface';
+
+//Шапка сайта
+@import 'sections/navbar';
+
+@import 'sections/hero';
