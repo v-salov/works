@@ -12,21 +12,21 @@
 
 <body>
   <header class="header">
-      <div class="menu">
-          <div class="container">
-            <nav class="menu__nav">
-              <a href="#" class="menu__link">Главная</a>
-              <a href="#" class="menu__link">Продукция</a>
-              <a href="#" class="menu__link">Каталог</a>
-              <a href="#" class="menu__link">Примеры работ</a>
-              <a href="#" class="menu__link">Примерка изображений</a>
-              <a href="#" class="menu__link">Стоимость диллерам</a>
-              <a href="#" class="menu__link">О скинали</a>
-            </nav>
-          </div>
-        </div>
+    <div class="menu">
+      <div class="container">
+        <nav class="menu__nav">
+          <a href="#" class="menu__link">Главная</a>
+          <a href="#" class="menu__link">Продукция</a>
+          <a href="#" class="menu__link">Каталог</a>
+          <a href="#" class="menu__link">Примеры работ</a>
+          <a href="#" class="menu__link">Примерка изображений</a>
+          <a href="#" class="menu__link">Стоимость диллерам</a>
+          <a href="#" class="menu__link">О скинали</a>
+        </nav>
+      </div>
+    </div>
     <div class="navbar">
-      
+
       <div class="container">
 
         <div class="navbar-wrap">
@@ -70,12 +70,66 @@
         <span class="hero__subtitle">от 3 000 р/м2</span>
         <button class="button hero__button">Заказать скинали</button>
       </div>
-
     </div>
   </header>
-  
+
+  <main>
+    <section class="offer bg-secondary">
+      <div class="container">
+        <div class="offer__block offer-block">
+          <h2 class="offer__title">Оставьте заявку на расчет</h2>
+          <span class="offer__subtitle">
+            и получите скидку 30% на изготовление сктнали или фартука для кухни
+          </span>
+
+          <form action="#" class="form offer__form">
+
+            <div class="form__row">
+              <div class="form__group">
+                <label for="" class="form__label">Вид стекла</label>
+                <input type="text" class="input form__input">
+              </div>
+              <div class="form__group">
+                <label for="" class="form__label">Ширина, см</label>
+                <input type="text" class="input form__input">
+              </div>
+              <div class="form__group">
+                <label for="" class="form__label">Высота, см</label>
+                <input type="text" class="input form__input">
+              </div>
+            </div>
+
+            <div class="form__row form__row-checkbox">
+              <div class="form__checkbox">
+                <input class="checkbox" type="checkbox" id="install">
+                <label for="install" class="checkbox-label">Монтаж</label>
+              </div>
+              <div class="form__checkbox">
+                <input class="checkbox" type="checkbox" id="delivery">
+                <label for="delivery" class="checkbox-label">Доставка</label>
+              </div>
+            </div>
+
+            <div class="form__row">
+              <div class="form__group">
+                <input type="text" placeholder="Ваше имя" class="form__input input">
+              </div>
+              <div class="form__group">
+                <input type="tel" placeholder="Ваш телефон" class="form__input input">
+              </div>
+              <div class="form__group">
+                <input type="submit" class="button form__button" value="Получить скидку" class="form__input input">
+              </div>
+            </div>
+
+          </form>
+
+        </div>
+      </div>
+    </section>
+  </main>
   <!-- подключение виджета обратной связи через соцсети -->
-  <script type="text/javascript" src="https://spikmi.com/Widget?Id=1297"></script>
+  <!-- <script type="text/javascript" src="https://spikmi.com/Widget?Id=1297"></script> -->
 </body>
 
 </html>
