@@ -38,6 +38,9 @@ img {
   background-color: $primary;
   color: #ffffff;
   @include bold;
+  &:hover {
+    cursor: pointer;
+  }
 
   &-fitting {
     color: $primary;
