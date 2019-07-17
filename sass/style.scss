@@ -6,12 +6,11 @@
 @import 'colors';
 //Настройка интерфейса
 @import 'interface';
-//Шапка сайта
+
 @import 'sections/navbar';
-//Блок hero
 @import 'sections/hero';
-//Блок offer
 @import 'sections/offer';
-//Блок features
 @import 'sections/features';
+@import 'sections/catalog';
+@import 'sections/blog-list';
 
