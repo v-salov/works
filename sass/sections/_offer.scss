@@ -1,7 +1,7 @@
 .offer {
   padding: 129px 0;
   &-block {
-    background: #fff url('../img/form-bg.png') no-repeat center right;
+    background: #fff url("../img/form-bg.png") no-repeat center right;
     background-size: contain;
     padding: 80px;
     box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
@@ -83,6 +83,20 @@
     }
     &__input {
       margin-bottom: 20px;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .form {
+    &__row {
+      &-checkbox {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    } 
+    &__checkbox {
+       margin-bottom: 20px;
     }
   }
 }

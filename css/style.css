@@ -461,6 +461,21 @@ input[type=checkbox]:checked + label:before {
   }
 }
 
+@media (max-width: 480px) {
+  .form__row-checkbox {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .form__checkbox {
+    margin-bottom: 20px;
+  }
+}
+
 .features-block {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -660,10 +675,6 @@ input[type=checkbox]:checked + label:before {
   }
 }
 
-.price {
-  background-color: #f1f1f1;
-}
-
 .price-block {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -682,7 +693,7 @@ input[type=checkbox]:checked + label:before {
 .price-card {
   background-color: #fff;
   position: relative;
-  width: 300px;
+  width: 290px;
 }
 
 .price-card__text {
@@ -718,8 +729,8 @@ input[type=checkbox]:checked + label:before {
   background-color: #fff;
   text-align: center;
   position: absolute;
-  -webkit-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.05);
-          box-shadow: 0 5px 5px rgba(0, 0, 0, 0.05);
+  -webkit-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
   height: 80px;
   width: 100%;
   padding: 20px;
@@ -739,7 +750,7 @@ input[type=checkbox]:checked + label:before {
             justify-content: center;
   }
   .price-block__card {
-    margin-left: 10px;
+    margin: 20px;
   }
 }
 /*# sourceMappingURL=style.css.map */
