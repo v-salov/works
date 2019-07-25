@@ -427,7 +427,7 @@ input[type=checkbox]:checked + label:before {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1199px) {
   .offer-block {
     background: none;
     background-color: #fff;
@@ -743,7 +743,7 @@ input[type=checkbox]:checked + label:before {
   bottom: -80px;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 1199px) {
   .price-block {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -751,6 +751,77 @@ input[type=checkbox]:checked + label:before {
   }
   .price-block__card {
     margin: 20px;
+  }
+}
+
+.step {
+  text-align: center;
+  position: relative;
+}
+
+.step:last-child:before {
+  display: none;
+}
+
+.step:before {
+  content: '';
+  width: 108%;
+  height: 2px;
+  background-color: #B4B2B2;
+  display: block;
+  position: absolute;
+  top: 31%;
+  right: -68%;
+  z-index: 99;
+}
+
+.step__image {
+  width: 60%;
+}
+
+.step__title {
+  font-size: 18px;
+}
+
+.step__text {
+  max-width: 162px;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+.steps {
+  background-color: #f1f1f1;
+}
+
+.steps-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+@media (max-width: 1199px) {
+  .step {
+    width: 33%;
+  }
+  .step:before {
+    display: none;
+  }
+  .step__image {
+    width: 40%;
+  }
+}
+
+@media (max-width: 768px) {
+  .step {
+    width: 100%;
+  }
+  .step__image {
+    max-width: 20%;
   }
 }
 /*# sourceMappingURL=style.css.map */
