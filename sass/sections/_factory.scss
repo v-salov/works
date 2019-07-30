@@ -1,0 +1,19 @@
+.factory {
+  &-block {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    &__image {
+      margin: 20px 0;
+      flex-basis: 40%;
+      img {
+        width: 100%;
+      }
+    }
+    &__text {
+      font-size: 20px;
+      flex-basis: 50%;
+      margin-left: 50px;
+    } 
+  }
+}
