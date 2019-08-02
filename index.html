@@ -7,6 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Works</title>
   <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/twentytwenty.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -88,7 +89,14 @@
             <div class="form__row">
               <div class="form__group">
                 <label for="" class="form__label">Вид стекла</label>
-                <input type="text" class="input form__input">
+                <input type="hidden" name="type">
+                <div class="select form__select">
+                  <div class="select__checked">С печатью</div>
+                  <ul class="select__dropdown">
+                    <li class="select__option">С печатью</li>
+                    <li class="select__option">Без печати</li>
+                  </ul>
+                </div>
               </div>
               <div class="form__group">
                 <label for="" class="form__label">Ширина, см</label>
@@ -424,6 +432,42 @@
       </div>
     </section>
 
+    <section class="section before">
+      <div class="container">
+        <h2 class="section-title section__title">До и после</h2>
+        <div class="before-slider-wrap">
+           <div class="before-slider">
+            <div class="before-slider__item">
+              <div class="before-after">
+                <img src="img/before/sample-before.png" alt="">
+                <img src="img/before/sample-after.png" alt="">
+              </div>
+            </div>
+            <div class="before-slider__item">
+              <div class="before-after">
+                <img src="img/before/sample-before.png" alt="">
+                <img src="img/before/sample-after.png" alt="">
+              </div>
+            </div>
+            <div class="before-slider__item">
+              <div class="before-after">
+                <img src="img/before/sample-before.png" alt="">
+                <img src="img/before/sample-after.png" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="before-slider-arrows">
+            <button class="arrow arrow-left">
+              <img src="img/before/left.png" alt="">
+            </button>
+            <button class="arrow arrow-right">
+              <img src="img/before/right.png" alt="">
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section class="section reviews">
       <div class="container">
         <h2 class="section-title section__title">
@@ -507,8 +551,12 @@
             <img src="img/factory/factory-image.png" alt="">
           </div>
           <div class="factory-block__text">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto alias delectus ab, adipisci id aliquam enim. Vel dolor cumque eveniet debitis, earum voluptatibus eaque, ab quisquam asperiores illum consequatur nisi.</p>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto alias delectus ab, adipisci id aliquam enim. Vel dolor cumque eveniet debitis, earum voluptatibus eaque, ab quisquam asperiores illum consequatur nisi.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto alias delectus ab, adipisci id
+              aliquam enim. Vel dolor cumque eveniet debitis, earum voluptatibus eaque, ab quisquam asperiores illum
+              consequatur nisi.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto alias delectus ab, adipisci id
+              aliquam enim. Vel dolor cumque eveniet debitis, earum voluptatibus eaque, ab quisquam asperiores illum
+              consequatur nisi.</p>
           </div>
         </div>
       </div>
@@ -526,7 +574,7 @@
             <img src="img/contacts/map.png" alt="" class="contacts__image">
             <div class="contacts__text">
               <address class="contacts__address">
-              Каширинское шоссе, д. 23, офис 345
+                Каширинское шоссе, д. 23, офис 345
               </address>
             </div>
           </div>
@@ -539,13 +587,54 @@
     </section>
 
     <div class="map" id="map">
-        <script type="text/javascript" charset="utf-8" async 
+      <script type="text/javascript" charset="utf-8" async
         src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A62ab53726a2b22ffd2ed2483d7adad7bfaa5dcfe2eaea19e2cc7252406d4fbfe&amp;width=100%25&amp;height=400&amp;lang=ru_UA&amp;scroll=false"></script>
     </div>
 
+    <section class="section questions">
+      <div class="container">
+        <div class="questions-block">
+          <h3 class="questions-title">Остались вопросы?</h3>
+          <a href="#" class="questions-link">Задайте их менеджеру</a>
+        </div>
+      </div>
+    </section>
+
   </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-block">
+        <div class="footer__description">
+          <h4 class="footer__title">Фабрика скинали №1</h4>
+          <span class="footer__subtitle">ведущий производитель скинали</span>
+          <span class="footer__copy">© Фабрика скинали №1</span>
+        </div>
+        <div class="foooter__pay-info">
+          <img class="footer__pay-logo" src="img/footer/wmoney.png" alt="">
+          <img class="footer__pay-logo" src="img/footer/visa.png" alt="">
+          <img class="footer__pay-logo" src="img/footer/master-card.png" alt="">
+          <img class="footer__pay-logo" src="img/footer/yan-money.png" alt="">
+        </div>
+        <div class="footer__contacts">
+          <a href="#" class="footer__phone">+7 123-456-78</a>
+          <a href="#" class="footer__mail">54041777@mail.ru</a>
+          <div class="footer-social">
+            <a href="#" class="footer-social__link"><img src="img/footer/fb.png" alt=""></a>
+            <a href="#" class="footer-social__link"><img src="img/footer/tw.png" alt=""></a>
+            <a href="#" class="footer-social__link"><img src="img/footer/vk.png" alt=""></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
   <!-- подключение виджета обратной связи через соцсети -->
   <!-- <script type="text/javascript" src="https://spikmi.com/Widget?Id=1297"></script> -->
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script src="js/jquery.twentytwenty.js"></script>
+  <script src="js/jquery.event.move.js"></script>
+  <script src="js/script.js"></script>
 </body>
 
 </html>

@@ -13,6 +13,14 @@
     height: 135px;
     position: relative;
     box-shadow: 7px 5px 21px rgba(0, 0, 0, 0.1);
+    overflow-y: hidden;
+
+    &:hover {
+      .catalog-card__buttons {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
     &__img {
       display: block;
       object-fit: cover;
@@ -24,6 +32,10 @@
       position: absolute;
       bottom: 0;
       right: 0;
+      opacity: 0;
+      transform: translateY(100%);
+      transition: 0.2s;
+
     }
 
     &__button {
@@ -41,10 +53,10 @@
       font-size: 12px;
       text-transform: uppercase;
       color: #fff;
-      background-color:rgba($primary, 0.6);
+      background-color: rgba($primary, 0.6);
     }
   }
-  
+
   &__link {
     text-align: center;
     margin-top: 60px;
@@ -65,7 +77,6 @@
     }
     &-card {
       flex-basis: 60%;
-
     }
   }
 }

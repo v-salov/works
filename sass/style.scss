@@ -4,6 +4,8 @@
 @import 'fonts';
 //Настройка цветов
 @import 'colors';
+//Slick slider
+@import 'slick';
 //Настройка интерфейса
 @import 'interface';
 
@@ -15,6 +17,9 @@
 @import 'sections/blog-list';
 @import 'sections/price';
 @import 'sections/steps';
+@import 'sections/before';
 @import 'sections/reviews';
 @import 'sections/factory';
 @import 'sections/contacts';
+@import 'sections/questions';
+@import 'sections/footer';
