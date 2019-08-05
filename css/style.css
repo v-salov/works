@@ -256,12 +256,13 @@ input[type="checkbox"]:checked + label:before {
   cursor: pointer;
 }
 
-.select_checked {
+.select__checked {
   line-height: 80px;
   padding-left: 30px;
 }
 
 .select__dropdown {
+  display: none;
   position: absolute;
   top: 80px;
   width: 100%;
@@ -272,12 +273,20 @@ input[type="checkbox"]:checked + label:before {
   padding: 0;
 }
 
+.select__dropdown_open {
+  display: block;
+}
+
 .select__option {
   padding: 20px;
 }
 
 .select__option:hover {
   background-color: #f1f1f1;
+}
+
+.checkbox {
+  display: none;
 }
 
 .checkbox-label {

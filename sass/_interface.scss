@@ -98,11 +98,12 @@ input[type="checkbox"] {
   &:hover {
     cursor: pointer;
   }
-  &_checked {
+  &__checked {
     line-height: 80px;
     padding-left: 30px;
   }
   &__dropdown {
+    display: none;
     position: absolute;
     top: 80px;
     width: 100%;
@@ -111,6 +112,9 @@ input[type="checkbox"] {
     margin: 0;
     list-style: none;
     padding: 0;
+    &_open {
+      display: block;
+    }
   }
   &__option {
     padding: 20px;
@@ -120,7 +124,7 @@ input[type="checkbox"] {
   }
 }
 .checkbox {
-
+display: none;
   &-label {
     display: flex; 
     align-items: center;

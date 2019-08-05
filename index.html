@@ -56,7 +56,7 @@
             <a class="navbar__work-time navbar__small-text" href="mailto:info@mail.cu">info@mail.cu</a>
           </div>
 
-          <button class="button-o navbar__button">Получить консультацию</button>
+          <a href="#offer" class="button-o navbar__button">Получить консультацию</a>
 
         </div>
 
@@ -69,14 +69,14 @@
           Гарантия <br> минимальной цены <br> на скинали
         </h1>
         <span class="hero__subtitle">от 3 000 р/м2</span>
-        <button class="button hero__button">Заказать скинали</button>
+        <a href="#offer" class="button hero__button">Заказать скинали</a>
       </div>
     </div>
   </header>
 
   <main>
 
-    <section class="offer bg-secondary">
+    <section id="offer"class="offer bg-secondary">
       <div class="container">
         <div class="offer__block offer-block offer-block_calc-bg">
           <h2 class="offer__title">Оставьте заявку на расчет</h2>
@@ -89,12 +89,12 @@
             <div class="form__row">
               <div class="form__group">
                 <label for="" class="form__label">Вид стекла</label>
-                <input type="hidden" name="type">
+                <input type="hidden" name="type" id="select-type" value="С печатью">
                 <div class="select form__select">
                   <div class="select__checked">С печатью</div>
                   <ul class="select__dropdown">
-                    <li class="select__option">С печатью</li>
-                    <li class="select__option">Без печати</li>
+                    <li class="select__option" data-value="С печатью">С печатью</li>
+                    <li class="select__option" data-value="Без печати">Без печати</li>
                   </ul>
                 </div>
               </div>
@@ -118,7 +118,7 @@
                 <label for="delivery" class="checkbox-label">Доставка</label>
               </div>
             </div>
-
+a
             <div class="form__row">
               <div class="form__group">
                 <input type="text" placeholder="Ваше имя" class="form__input input">
