@@ -27,7 +27,19 @@ $(window).load(function () {
 
   $("a[href^='#']").on('click', function() {
     let _href = $(this).attr('href');
-    $('html, body').animate({scrollTop: $(_href).offset().top-130 + 'px'});
+    $('html, body').animate({scrollTop: $(_href).offset().top - 120 + 'px'});
     return false;
+  })
+  $('[type="tel"]').mask("+7 (999) 999-99-99");
+
+  //Показывать карту, только после того, как докрутили до нее
+  let reviews = $('.reviews');
+  let reviewsTop = reviews.offset().top;
+  $(window).bind('scroll', function() {
+    let windowTop = $(this).scrollTop();
+    if (windowTop > reviewsTop) {
+      $('#map').html('<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A62ab53726a2b22ffd2ed2483d7adad7bfaa5dcfe2eaea19e2cc7252406d4fbfe&amp;width=100%25&amp;height=400&amp;lang=ru_UA&amp;scroll=false"></script>');
+      $(window).unbind('scroll');
+    }
   })
 });
